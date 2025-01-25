@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Tasks</title>
+    <script>
+      // Task 1: Calculate the cube of a number
+      function calculateCube() {
+        let number = prompt("Enter a number:");
+        let cube = Math.pow(Number(number), 3);
+        console.log("The cube of the number is:", cube);
+      }
+
+      // Task 2: Sum of two numbers
+      function sumTwoNumbers() {
+        let firstNumber = prompt("Enter the first number:");
+        let secondNumber = prompt("Enter the second number:");
+        let sum = Number(firstNumber) + Number(secondNumber);
+        console.log("The sum of the two numbers is:", sum);
+      }
+
+      // Task 3: User information
+      function userInfo() {
+        let username = prompt("Enter your name:");
+        let usersurname = prompt("Enter your surname:");
+        let userage = prompt("Enter your age:");
+        let userposition = prompt("Enter your position:");
+
+        let currentYear = 2024;
+        let birthYear = currentYear - Number(userage);
+
+        console.log(
+          `Hi, my name is ${username} ${usersurname}. I was born in ${birthYear}. I’m ${userposition}.`
+        );
+      }
+    </script>
+  </head>
+  <body>
+    <h1>JavaScript Tasks</h1>
+    <button onclick="calculateCube()">Calculate Cube</button>
+    <button onclick="sumTwoNumbers()">Sum Two Numbers</button>
+    <button onclick="userInfo()">User Information</button>
+  </body>
+</html>
